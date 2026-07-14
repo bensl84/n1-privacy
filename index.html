@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N=1 — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #ffffff;
+            padding: 2rem 1.5rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+        p, li { font-size: 0.95rem; color: #333; }
+        ul { padding-left: 1.25rem; margin-top: 0.25rem; }
+        li { margin-bottom: 0.25rem; }
+        .subtitle { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: none; border-top: 1px solid #e5e5e5; margin: 2rem 0; }
+    </style>
+</head>
+<body>
+    <h1>N=1 Privacy Policy</h1>
+    <p class="subtitle">Last updated: July 14, 2026</p>
+
+    <h2>Overview</h2>
+    <p>N=1 is a personal health tracking app. Your privacy is fundamental to how the app is built. Core tracking data is stored on your device. Some optional features require external processing, and those features send only the information needed to complete the action you request.</p>
+
+    <h2>Data Collected</h2>
+    <ul>
+        <li><strong>HealthKit data</strong> — Heart rate, sleep, activity, HRV, and other metrics you authorize. This data is stored locally for app functionality. When you use AI Coach, weekly AI summaries, or supplement discovery, selected health context may be sent to the Anthropic Claude API to answer your request.</li>
+        <li><strong>Food descriptions and photos</strong> — When you use AI-powered nutrition analysis, text descriptions or photos of food are sent to the Anthropic Claude API for analysis.</li>
+        <li><strong>Nutrition and supplement logs</strong> — Stored locally on your device.</li>
+        <li><strong>Readiness calibration data</strong> — Daily readiness prediction snapshots and your one-tap feel answers are stored locally in protected files on your device. They remain in your normal iCloud device backup because this personal baseline history is hard to recreate. N=1 does not send this calibration history to a N=1 backend.</li>
+        <li><strong>Bug and diagnostic reports</strong> — Reports are saved locally unless GitHub reporting is configured. Submitted reports may include text you enter, app and device metadata, and system crash diagnostics. Screenshot bytes and health logs are not uploaded.</li>
+    </ul>
+
+    <h2>Data NOT Collected</h2>
+    <ul>
+        <li>No user accounts or sign-in required</li>
+        <li>No N=1 account database for your health data</li>
+        <li>No analytics or usage tracking</li>
+        <li>No advertising or ad identifiers</li>
+        <li>No location data</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p><strong>Anthropic Claude API</strong> — Used to analyze food photos and text descriptions, generate weekly summaries, support supplement discovery, and answer Coach questions using the context needed for that request. Per Anthropic's <a href="https://www.anthropic.com/policies/privacy">API data policy</a>, API inputs are not used to train models and may be retained for trust and safety monitoring before deletion.</p>
+    <p><strong>GitHub Issues</strong> — Used only when you configure reporting or choose to submit a bug or feature report. System diagnostics are queued locally and can be submitted through the same configured path.</p>
+    <p><strong>Supabase</strong> — Internal relay builds may mirror generic issue status, labels, and the GitHub issue URL for operations. The report body, screenshot bytes, health logs, and tester identifier are not included in that mirror.</p>
+
+    <h2>Data Storage</h2>
+    <p>Health data, nutrition logs, goals, and settings are stored locally on your device using UserDefaults, SwiftData, and Apple's HealthKit. N=1 does not operate a general health-data account or analytics database. Your Anthropic API key is stored securely in the iOS Keychain and may be synced to the Apple Watch Keychain to support Watch food logging.</p>
+
+    <h2>Your Control</h2>
+    <p>You can revoke HealthKit permissions at any time in Settings &gt; Health &gt; Data Access. You can delete readiness calibration history from N=1 Settings &gt; Developer. Deleting the app removes all locally stored data.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach out at <a href="mailto:support@bluehatmechanical.com">support@bluehatmechanical.com</a>.</p>
+
+    <hr>
+    <p style="font-size: 0.8rem; color: #999;">Blue Hat Mechanical LLC</p>
+</body>
+</html>
